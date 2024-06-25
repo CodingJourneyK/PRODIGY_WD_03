@@ -3,15 +3,23 @@ body{
     justify-content: center;
     align-items: center;
     height: 97vh;
-    background: linear-gradient(45deg, #bb00ffdb, #ff47feed, rgba(255,143,224,1));
+    background: linear-gradient(45deg, #2cf83ae9,rgb(8, 103, 44));  
     font-family: 'Courier New', Courier, monospace;
     font-variant: small-caps;
 }
 
 .container{
     text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #2cf83ae9,rgb(8, 103, 44));  
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
     font-weight: bold;
     font-size: large;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff; 
 }
 
 #board{
@@ -24,7 +32,9 @@ body{
 .cell{
     width: 100px;
     height: 100px;
-    background-color: #ffffff;
+    background-color: #c1c1c1;
+    color: #2c2c34;
+    border-radius: 10px;
     border: 2px solid #000;
     display: flex;
     justify-content: center;
@@ -35,30 +45,29 @@ body{
 }
 
 .cell:hover{
-    background-color: #ed449802;
+    background-color: #5ef25916;
+    color: #ffffff;
 }
 
 #reset-button{
     margin: 20px;
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #77068369;
+    background-color: #147225;
+    border: none;
     border: purple;
     border-radius: 10px;
+    color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #reset-button:hover{
-    background-color: rgba(221, 76, 237, 0.827);
-}
-
-#mode{
-    margin: 20px;
-    padding: 5px;
+    background-color: #23803c9e;
 }
 
 #status{
     font-size: 1.8em;
     margin-top: 20px;
+    color: #0c631a;
 }
