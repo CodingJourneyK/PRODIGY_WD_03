@@ -1,73 +1,78 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 97vh;
-    background: linear-gradient(45deg, #2cf83ae9,rgb(8, 103, 44));  
+    height: 100vh;
+    background: linear-gradient(135deg, #0d3b66,#5980b4e1, #0d3b66); /* Gradient background: light navy */
+    color: #ffffff; /* White text color for better contrast */
     font-family: 'Courier New', Courier, monospace;
-    font-variant: small-caps;
+    font-variant: small-caps;    
+    margin: 0;
 }
 
-.container{
+.container {
     text-align: center;
+    background-color: rgba(41, 50, 65, 0.9); /* Semi-transparent dark background */
     padding: 20px;
-    background: linear-gradient(45deg, #2cf83ae9,rgb(8, 103, 44));  
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    font-weight: bold;
-    font-size: large;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Larger shadow for depth */
+    backdrop-filter: blur(10px); /* Blur effect for background */
 }
 
 h1 {
     margin-bottom: 20px;
-    color: #ffffff; 
+    color: #3aafa9; /* Bright neon green color for the heading */
+    font-size: 2.5em;
 }
 
-#board{
+#board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    grid-gap: 5px;
+    grid-gap: 10px;
     margin: 20px auto;
 }
 
-.cell{
+.cell {
     width: 100px;
     height: 100px;
-    background-color: #c1c1c1;
-    color: #2c2c34;
+    background-color: rgba(58, 175, 169, 0.8); /* Semi-transparent neon green background for cells */
     border-radius: 10px;
-    border: 2px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 3em;
+    font-weight: bold;
+    color: #293241; /* Dark color for text inside cells */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.cell:hover{
-    background-color: #5ef25916;
-    color: #ffffff;
+.cell:hover {
+    background-color: #3aafa9; /* Brighter neon green color on hover */
+    color: #ffffff; /* White text on hover */
+    transform: scale(1.1); /* Slightly enlarge the cell on hover */
 }
 
-#reset-button{
+#reset-button {
     margin: 20px;
     padding: 10px 20px;
-    font-size: 1em;
-    background-color: #147225;
+    font-size: 1.3em;
+    background-color: #3aafa9; /* Bright neon green color for button */
     border: none;
-    border: purple;
-    border-radius: 10px;
-    color: #ffffff;
+    border-radius: 5px;
+    color: #293241; /* Dark text for button */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#reset-button:hover{
-    background-color: #23803c9e;
+#reset-button:hover {
+    background-color: #2e8b8e; /* Slightly darker neon green color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
-#status{
+#status {
     font-size: 1.8em;
+    font-weight: bolder;
     margin-top: 20px;
-    color: #0c631a;
+    color: #3aafa9; /* Bright neon green color for status text */
 }
